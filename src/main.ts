@@ -10,9 +10,8 @@ import { doc } from "prettier"
 async function start(){
     const PORT = process.env.PORT || 2000
     const app = await NestFactory.create(AppModule)
-
-
     const config = new DocumentBuilder()
+    
     .setTitle('Event API')
     .setDescription("REST API")
     .setVersion('1.0.0')
